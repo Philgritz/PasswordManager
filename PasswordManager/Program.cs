@@ -27,8 +27,16 @@ namespace PasswordManager {
 
             var password = passwordmanage["Amazon.com"];
             Console.WriteLine($"The password for Amazon.com is {password}");
-           
 
+            foreach(var keyvalpair in passwordmanage) {
+                Console.WriteLine($"The password for {keyvalpair.Key} is {keyvalpair.Value}");
+            }
+
+            var allTheKeys = passwordmanage.Keys;   //retrieve just keys or just values
+            var allTheValues = passwordmanage.Values;  //dictionary does not allow duplicates
+
+            var maxtrain = "maxtrain.com";  //see if it's already in the dictionary
+            var exists = passwordmanage.ContainsKey(maxtrain);
         }
     }
 }
