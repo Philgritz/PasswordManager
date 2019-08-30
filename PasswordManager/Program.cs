@@ -19,6 +19,8 @@ namespace PasswordManager {
             passwordmanage.Add("Amazon.com", "Pink11");
             passwordmanage.Add("Netflix.com", "Grey12");
 
+            string bitcoin = passwordmanage["Coinbase.com"];
+            Console.WriteLine(bitcoin);
            
 
         }
