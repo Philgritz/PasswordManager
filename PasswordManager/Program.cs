@@ -5,7 +5,10 @@ namespace PasswordManager {
     class Program {
         static void Main(string[] args) {
 
-            Dictionary<string, string> passwordmanage = new Dictionary<string, string>();
+            
+            
+
+            var passwordmanage = new Dictionary<string, string>();
             passwordmanage.Add("MaxTrain.com", "Red1");
             passwordmanage.Add("Gmail.com", "Orange2");
             passwordmanage.Add("Yahoo.com", "Yellow3");
@@ -21,6 +24,9 @@ namespace PasswordManager {
 
             string bitcoin = passwordmanage["Coinbase.com"];
             Console.WriteLine(bitcoin);
+
+            var password = passwordmanage["Amazon.com"];
+            Console.WriteLine($"The password for Amazon.com is {password}");
            
 
         }
